@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BhaavBook — Chase the quote, win the job</title>
+  <meta name="description" content="Build a quote, track its status, and auto-nudge until it converts. For contractors, fabricators, interior designers and AMC vendors. Rs 499/mo." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="BhaavBook home">
+      <span class="nav__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28">
+          <rect width="32" height="32" rx="7" fill="#7C3AED"/>
+          <rect x="8" y="6" width="16" height="20" rx="2" fill="#FAF7F2"/>
+          <line x1="11" y1="11" x2="21" y2="11" stroke="#7C3AED" stroke-width="1.6" stroke-linecap="round"/>
+          <line x1="11" y1="15" x2="21" y2="15" stroke="#E0D8CC" stroke-width="1.4" stroke-linecap="round"/>
+          <line x1="11" y1="19" x2="18" y2="19" stroke="#E0D8CC" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="nav__name">BhaavBook</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#problem">Problem</a>
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a href="#pricing" class="btn btn--sm nav__cta">Start quoting</a>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Quotation software for Indian trades</p>
+        <h1 class="hero__title">Chase the quote,<br /><span class="u-accent">win the job.</span></h1>
+        <p class="hero__lede">
+          You send a price on WhatsApp and then… nothing. No reminder, no follow-up, no
+          record. BhaavBook builds the quote, tracks it, and nudges the customer for you
+          until they say yes.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--lg">Build your first quote — Rs 499/mo</a>
+          <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
+        </div>
+        <p class="hero__foot">
+          <span class="dot dot--green"></span> No app to install for your customer — they just open a link.
+        </p>
+      </div>
+
+      <!-- SIGNATURE: the quote slip + live nudge ladder -->
+      <aside class="slip-stage" aria-label="A BhaavBook quote and its follow-up nudges">
+        <article class="slip" aria-hidden="false">
+          <div class="slip__perf" aria-hidden="true"></div>
+          <div class="slip__head">
+            <div>
+              <p class="slip__biz">Sharma Fabrication Works</p>
+              <p class="slip__meta">Estimate · MS grille &amp; railing</p>
+            </div>
+            <span class="stamp stamp--sent">SENT</span>
+          </div>
+          <div class="slip__lines">
+            <div class="slip__row"><span>MS railing — 40 rft</span><span class="rup">Rs 28,000</span></div>
+            <div class="slip__row"><span>Window grille — 6 nos</span><span class="rup">Rs 18,600</span></div>
+            <div class="slip__row"><span>Fabrication + welding</span><span class="rup">Rs 9,400</span></div>
+            <div class="slip__row slip__row--tax"><span>GST 18%</span><span class="rup">Rs 10,080</span></div>
+          </div>
+          <div class="slip__total">
+            <span>Total</span><span class="rup rup--big">Rs 66,080</span>
+          </div>
+          <p class="slip__id">bhaavbook.in/quote/QT-2047</p>
+        </article>
+
+        <div class="ladder" aria-label="Auto follow-up nudge ladder">
+          <p class="ladder__label">Auto-nudge ladder</p>
+          <div class="wa" data-nudge="0">
+            <div class="wa__bubble">
+              <p class="wa__text">Namaste Rajesh ji — just checking if the railing estimate looks okay. Happy to adjust anything. 🙏</p>
+              <span class="wa__meta">T+2 days · <span class="wa__ticks">✓✓</span></span>
+            </div>
+          </div>
+          <div class="wa" data-nudge="1">
+            <div class="wa__bubble">
+              <p class="wa__text">Following up on your grille quote. I can hold this rate till Friday if you'd like to confirm.</p>
+              <span class="wa__meta">T+5 days · <span class="wa__ticks">✓✓</span></span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 2. THE PROBLEM ============ -->
+    <section class="section" id="problem">
+      <div class="section__head">
+        <p class="eyebrow">The problem</p>
+        <h2 class="h2">The quote leaves your phone and disappears.</h2>
+        <p class="section__sub">
+          The trades that live and die on quotes have no system for the one thing that
+          decides whether the money comes in — the follow-up.
+        </p>
+      </div>
+
+      <div class="who">
+        <div class="who__card">
+          <span class="who__ico" aria-hidden="true">🔧</span>
+          <h3>Contractors</h3>
+          <p>Ten site visits a week, ten prices given verbally. By Friday you can't remember who you quoted what.</p>
+        </div>
+        <div class="who__card">
+          <span class="who__ico" aria-hidden="true">🏗️</span>
+          <h3>Fabricators</h3>
+          <p>A grille job here, a gate there. The estimate goes on WhatsApp and gets buried under 40 other chats.</p>
+        </div>
+        <div class="who__card">
+          <span class="who__ico" aria-hidden="true">🛋️</span>
+          <h3>Interior designers</h3>
+          <p>Beautiful moodboard, detailed BOQ, sent as a PDF — then silence, and no polite way to ask again.</p>
+        </div>
+        <div class="who__card">
+          <span class="who__ico" aria-hidden="true">🧰</span>
+          <h3>AMC vendors</h3>
+          <p>Renewal quotes go out in bulk. Half get ignored simply because nobody circled back in time.</p>
+        </div>
+      </div>
+
+      <div class="breakdown">
+        <p class="breakdown__title">Today's toolkit — and where it snaps</p>
+        <ul class="breakdown__list">
+          <li><strong>WhatsApp</strong> sends the number, but it can't tell you who opened it or when to ask again.</li>
+          <li><strong>The diary</strong> holds the job once it's confirmed — never the fifteen quotes still deciding.</li>
+          <li><strong>Your memory</strong> is doing the work of a CRM, and it's the first thing to drop on a busy site.</li>
+        </ul>
+        <p class="breakdown__punch">A quote nobody follows up on is a customer you paid to find and then let walk away.</p>
+      </div>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 3. THE INSIGHT ============ -->
+    <section class="insight" id="insight">
+      <p class="eyebrow eyebrow--onviolet">The wedge</p>
+      <blockquote class="insight__quote">
+        The quote is the top of your funnel — and a cold one is free money left on the table.
+        One well-timed nudge turns a “maybe” into a job, at zero extra cost.
+      </blockquote>
+      <p class="insight__sig">That nudge is the entire product. BhaavBook just never forgets to send it.</p>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 4. HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="section__head">
+        <p class="eyebrow">How it works</p>
+        <h2 class="h2">From price to paid job, on rails.</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3 class="step__title">Build the quote</h3>
+          <p>Add line items, quantities and GST. BhaavBook prints a clean, branded quote page you send as a single link.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3 class="step__title">Send &amp; track</h3>
+          <p>Share the <code>/quote/{id}</code> link on WhatsApp. See exactly when it moves from Sent to Opened.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3 class="step__title">Auto-nudge</h3>
+          <p>Still no reply at T+2 and T+5 days? A polite follow-up drops into your outbox, ready to fire.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">04</span>
+          <h3 class="step__title">Convert to a job</h3>
+          <p>Customer says yes — turn the accepted quote into a job in one tap, and watch your conversion rate climb.</p>
+        </li>
+      </ol>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 5. FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="section__head">
+        <p class="eyebrow">What's inside</p>
+        <h2 class="h2">Everything a quote needs to become money.</h2>
+      </div>
+
+      <div class="grid-feat">
+        <article class="feat">
+          <h3>Quote builder</h3>
+          <p>Line items, quantities, and tax that add up correctly every time. No more calculator-and-notepad math.</p>
+        </article>
+        <article class="feat">
+          <h3>Branded quote page</h3>
+          <p>A clean, printable page at <code>/quote/{id}</code> with your business name on top — sends as one tidy link.</p>
+        </article>
+        <article class="feat">
+          <h3>Status tracking</h3>
+          <p>Sent → Opened → Accepted, at a glance. You always know which quotes are still alive.</p>
+        </article>
+        <article class="feat">
+          <h3>Auto follow-up ladder</h3>
+          <p>Nudges queued for T+2 and T+5 days after sending, if the quote is still only sent or opened.</p>
+        </article>
+        <article class="feat">
+          <h3>Quote → job convert</h3>
+          <p>Accept a quote and it becomes a live job instantly — nothing to re-type, nothing lost in the shuffle.</p>
+        </article>
+        <article class="feat">
+          <h3>Win / loss funnel</h3>
+          <p>See your conversion rate, open quote value, and exactly which quotes need a follow-up today.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 6. PRODUCT PREVIEW ============ -->
+    <section class="section preview" id="preview">
+      <div class="section__head">
+        <p class="eyebrow">The dashboard</p>
+        <h2 class="h2">Your whole pipeline on one screen.</h2>
+        <p class="section__sub">This is what you open with your morning chai — open value, conversion, and today's follow-ups.</p>
+      </div>
+
+      <div class="screen" role="img" aria-label="BhaavBook dashboard showing open quote value of Rs 4.82 lakh, 41 percent conversion, and a list of quotes needing follow-up">
+        <div class="screen__chrome" aria-hidden="true">
+          <span class="screen__dots"><i></i><i></i><i></i></span>
+          <span class="screen__url">bhaavbook.in/dashboard</span>
+        </div>
+        <div class="screen__body">
+          <div class="screen__topbar">
+            <div class="screen__hi">
+              <p class="screen__hello">Good morning, Priya</p>
+              <p class="screen__biz">Devi Interiors · Pune</p>
+            </div>
+            <span class="btn btn--sm btn--screen">+ New quote</span>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi">
+              <p class="kpi__label">Open quote value</p>
+              <p class="kpi__num rup" id="kpi-value">Rs 4,82,400</p>
+              <p class="kpi__foot">across 11 live quotes</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__label">Conversion rate</p>
+              <p class="kpi__num" id="kpi-conv">41%</p>
+              <div class="bar"><span class="bar__fill" style="width:41%"></span></div>
+            </div>
+            <div class="kpi kpi--accent">
+              <p class="kpi__label">Need follow-up today</p>
+              <p class="kpi__num" id="kpi-follow">4</p>
+              <p class="kpi__foot">nudges ready in your outbox</p>
+            </div>
+          </div>
+
+          <div class="table">
+            <div class="table__head">
+              <span>Quote</span><span>Customer</span><span class="ta-r">Value</span><span>Status</span>
+            </div>
+            <div class="table__row">
+              <span class="mono">QT-2051</span>
+              <span>Kiran Deshmukh · Baner</span>
+              <span class="ta-r rup">Rs 1,24,000</span>
+              <span><em class="tag tag--follow">Nudge due</em></span>
+            </div>
+            <div class="table__row">
+              <span class="mono">QT-2049</span>
+              <span>Anand Kulkarni · Kothrud</span>
+              <span class="ta-r rup">Rs 76,500</span>
+              <span><em class="tag tag--open">Opened</em></span>
+            </div>
+            <div class="table__row">
+              <span class="mono">QT-2047</span>
+              <span>Rajesh Sharma · Wakad</span>
+              <span class="ta-r rup">Rs 66,080</span>
+              <span><em class="tag tag--follow">Nudge due</em></span>
+            </div>
+            <div class="table__row">
+              <span class="mono">QT-2045</span>
+              <span>Meena Iyer · Aundh</span>
+              <span class="ta-r rup">Rs 2,10,000</span>
+              <span><em class="tag tag--won">Won → Job</em></span>
+            </div>
+            <div class="table__row">
+              <span class="mono">QT-2043</span>
+              <span>Farhan Shaikh · Hadapsar</span>
+              <span class="ta-r rup">Rs 38,900</span>
+              <span><em class="tag tag--sent">Sent</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 7. PRICING ============ -->
+    <section class="section pricing" id="pricing">
+      <div class="section__head">
+        <p class="eyebrow">Pricing</p>
+        <h2 class="h2">One flat price. No per-quote fees.</h2>
+      </div>
+
+      <div class="price-wrap">
+        <div class="price-card">
+          <p class="price-card__tag">BhaavBook</p>
+          <p class="price-card__amt"><span class="price-card__cur">Rs</span>499<span class="price-card__per">/mo</span></p>
+          <ul class="price-card__list">
+            <li>Unlimited quotes &amp; branded quote pages</li>
+            <li>Auto-nudge ladder (T+2 &amp; T+5)</li>
+            <li>Status tracking &amp; quote-to-job convert</li>
+            <li>Win/loss funnel &amp; dashboard</li>
+          </ul>
+          <a href="#top" class="btn btn--lg btn--block">Start quoting today</a>
+          <p class="price-card__fine">14-day trial · cancel anytime</p>
+        </div>
+        <div class="roi">
+          <p class="eyebrow">The maths</p>
+          <p class="roi__line">
+            Win back <strong>one extra job a month</strong> from a nudge you'd otherwise have forgotten,
+            and BhaavBook has paid for itself many times over.
+          </p>
+          <p class="roi__stat"><span class="rup rup--big">Rs 499</span> vs a single <span class="rup">Rs 60,000+</span> job you almost let go cold.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule"></div>
+
+    <!-- ============ 8. WHO IT'S FOR + FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="whofor">
+        <div class="section__head section__head--left">
+          <p class="eyebrow">Built for</p>
+          <h2 class="h2">If you quote to win work, this is for you.</h2>
+        </div>
+        <ul class="chips">
+          <li>Civil &amp; renovation contractors</li>
+          <li>Metal &amp; wood fabricators</li>
+          <li>Interior designers</li>
+          <li>AMC &amp; service vendors</li>
+          <li>Electricians &amp; plumbers</li>
+          <li>Modular kitchen &amp; furniture makers</li>
+        </ul>
+      </div>
+
+      <div class="faq">
+        <p class="eyebrow">Questions</p>
+        <details class="qa" open>
+          <summary>Does my customer need to install anything?</summary>
+          <p>No. You send a link, they tap it and see the quote in their browser. The nudges go out over your own WhatsApp, so it feels like you.</p>
+        </details>
+        <details class="qa">
+          <summary>Are the follow-up nudges automatic or do I approve them?</summary>
+          <p>They're prepared for you. At T+2 and T+5 days a ready-to-send nudge lands in your outbox — you glance and send, so the tone always stays yours.</p>
+        </details>
+        <details class="qa">
+          <summary>Will it handle GST and different tax rates?</summary>
+          <p>Yes. Add tax per line or on the whole quote; the printable quote page shows a clean tax breakup your customer can trust.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 9. FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="nav__name">BhaavBook</span>
+      <p class="footer__tag">Chase the quote, win the job.</p>
+    </div>
+    <div class="footer__meta">
+      <p>A <strong>KARYA</strong> studio build.</p>
+      <p><a href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a></p>
+      <p class="footer__fine">Rs 499/mo · Made for Indian trades</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
