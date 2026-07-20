@@ -2,7 +2,7 @@
 
 Standalone marketing / explainer page for **BhaavBook**.
 
-> **Chase the quote, win the job.** — Rs 499/mo
+> **Chase the quote, win the job.** — subscription · pricing on discovery
 
 Build a quote, track its status, and auto-nudge until it converts. For contractors,
 fabricators, interior designers and AMC vendors.

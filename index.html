@@ -1,20 +1,138 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BhaavBook — Chase the quote, win the job</title>
-  <meta name="description" content="Build a quote, track its status, and auto-nudge until it converts. For contractors, fabricators, interior designers and AMC vendors. Rs 499/mo." />
+  <title>BhaavBook — Quotation software that chases quotes to a yes</title>
+  <meta name="description" content="Quotation software for Indian trades: build a quote, track its status, and auto-nudge every estimate until it converts. Quote maker plus follow-up. Try it free." />
+  <meta name="keywords" content="quotation software, quote maker, estimate app, quote follow-up, proposal tracking India, contractors, fabricators, interior designers, AMC vendors" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="canonical" href="https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/" />
+  <meta name="theme-color" content="#7C3AED" />
+  <meta name="author" content="KARYA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KARYA" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="BhaavBook — Quotation software that chases quotes to a yes" />
+  <meta property="og:description" content="Quotation software for Indian trades: build a quote, track its status, and auto-nudge every estimate until it converts. Quote maker and follow-up in one." />
+  <meta property="og:url" content="https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/" />
+  <meta property="og:image" content="https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="BhaavBook — quotation software and quote follow-up for Indian trades" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BhaavBook — Quotation software that chases quotes to a yes" />
+  <meta name="twitter:description" content="Quotation software for Indian trades: build a quote, track its status, and auto-nudge every estimate until it converts." />
+  <meta name="twitter:image" content="https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/og.png" />
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/og.png" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "KARYA",
+        "url": "https://kaarya-bench.pages.dev/",
+        "email": "sreeni.nintendo@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/",
+        "name": "BhaavBook",
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BhaavBook",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/",
+        "image": "https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/og.png",
+        "description": "Quotation software and quote maker for Indian trades — build an estimate, track its status, and auto-nudge every quote until it converts.",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "areaServed": { "@type": "Country", "name": "India" },
+        "audience": { "@type": "BusinessAudience" },
+        "provider": { "@type": "Organization", "name": "KARYA" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "description": "Subscription — pricing shared on a discovery call"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does my customer need to install anything?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You send a link, they tap it and see the quote in their browser. The nudges go out over your own WhatsApp, so it feels like you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the follow-up nudges automatic or do I approve them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They're prepared for you. At T+2 and T+5 days a ready-to-send nudge lands in your outbox — you glance and send, so the tone always stays yours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will it handle GST and different tax rates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Add tax per line or on the whole quote; the printable quote page shows a clean tax breakup your customer can trust."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does BhaavBook cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first users."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "KARYA On the Bench",
+            "item": "https://kaarya-bench.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BhaavBook",
+            "item": "https://sreenivas-sadhu-prabhakara.github.io/bhaavbook-site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="top">
     <a class="nav__brand" href="#top" aria-label="BhaavBook home">
-      <span class="nav__mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="28" height="28">
+      <span class="nav__mark">
+        <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-label="BhaavBook logo — a quote document"><title>BhaavBook logo</title>
           <rect width="32" height="32" rx="7" fill="#7C3AED"/>
           <rect x="8" y="6" width="16" height="20" rx="2" fill="#FAF7F2"/>
           <line x1="11" y1="11" x2="21" y2="11" stroke="#7C3AED" stroke-width="1.6" stroke-linecap="round"/>
@@ -36,7 +154,7 @@
   <main>
 
     <!-- ============ 1. HERO ============ -->
-    <section class="hero">
+    <section class="hero" aria-label="Introduction">
       <div class="hero__copy">
         <p class="eyebrow">Quotation software for Indian trades</p>
         <h1 class="hero__title">Chase the quote,<br /><span class="u-accent">win the job.</span></h1>
@@ -46,7 +164,7 @@
           until they say yes.
         </p>
         <div class="hero__actions">
-          <a href="#pricing" class="btn btn--lg">Build your first quote — Rs 499/mo</a>
+          <a href="#pricing" class="btn btn--lg">Build your first quote · subscription · pricing on discovery</a>
           <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
         </div>
         <p class="hero__foot">
@@ -98,7 +216,7 @@
     <div class="rule"></div>
 
     <!-- ============ 2. THE PROBLEM ============ -->
-    <section class="section" id="problem">
+    <section class="section" id="problem" aria-label="The problem">
       <div class="section__head">
         <p class="eyebrow">The problem</p>
         <h2 class="h2">The quote leaves your phone and disappears.</h2>
@@ -145,7 +263,7 @@
     <div class="rule"></div>
 
     <!-- ============ 3. THE INSIGHT ============ -->
-    <section class="insight" id="insight">
+    <section class="insight" id="insight" aria-label="The insight">
       <p class="eyebrow eyebrow--onviolet">The wedge</p>
       <blockquote class="insight__quote">
         The quote is the top of your funnel — and a cold one is free money left on the table.
@@ -157,7 +275,7 @@
     <div class="rule"></div>
 
     <!-- ============ 4. HOW IT WORKS ============ -->
-    <section class="section" id="how">
+    <section class="section" id="how" aria-label="How it works">
       <div class="section__head">
         <p class="eyebrow">How it works</p>
         <h2 class="h2">From price to paid job, on rails.</h2>
@@ -190,7 +308,7 @@
     <div class="rule"></div>
 
     <!-- ============ 5. FEATURES ============ -->
-    <section class="section" id="features">
+    <section class="section" id="features" aria-label="Features">
       <div class="section__head">
         <p class="eyebrow">What's inside</p>
         <h2 class="h2">Everything a quote needs to become money.</h2>
@@ -227,7 +345,7 @@
     <div class="rule"></div>
 
     <!-- ============ 6. PRODUCT PREVIEW ============ -->
-    <section class="section preview" id="preview">
+    <section class="section preview" id="preview" aria-label="Product preview">
       <div class="section__head">
         <p class="eyebrow">The dashboard</p>
         <h2 class="h2">Your whole pipeline on one screen.</h2>
@@ -308,24 +426,25 @@
     <div class="rule"></div>
 
     <!-- ============ 7. PRICING ============ -->
-    <section class="section pricing" id="pricing">
+    <section class="section pricing" id="pricing" aria-label="Pricing">
       <div class="section__head">
         <p class="eyebrow">Pricing</p>
-        <h2 class="h2">One flat price. No per-quote fees.</h2>
+        <h2 class="h2">Simple monthly subscription, sized to your setup.</h2>
       </div>
 
       <div class="price-wrap">
         <div class="price-card">
           <p class="price-card__tag">BhaavBook</p>
-          <p class="price-card__amt"><span class="price-card__cur">Rs</span>499<span class="price-card__per">/mo</span></p>
+          <p class="price-card__amt"><span class="price-card__per price-card__per--lead">Pricing on discovery</span><span class="price-card__per">Subscription basis</span></p>
+          <p class="price-card__blurb">We set pricing on a short discovery call and bill it as a simple monthly subscription — sized to your quote volume. Early users get founder terms.</p>
           <ul class="price-card__list">
             <li>Unlimited quotes &amp; branded quote pages</li>
             <li>Auto-nudge ladder (T+2 &amp; T+5)</li>
             <li>Status tracking &amp; quote-to-job convert</li>
             <li>Win/loss funnel &amp; dashboard</li>
           </ul>
-          <a href="#top" class="btn btn--lg btn--block">Start quoting today</a>
-          <p class="price-card__fine">14-day trial · cancel anytime</p>
+          <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20BhaavBook" class="btn btn--lg btn--block">Book a discovery call</a>
+          <p class="price-card__fine">Founder terms for early users · cancel anytime</p>
         </div>
         <div class="roi">
           <p class="eyebrow">The maths</p>
@@ -333,7 +452,7 @@
             Win back <strong>one extra job a month</strong> from a nudge you'd otherwise have forgotten,
             and BhaavBook has paid for itself many times over.
           </p>
-          <p class="roi__stat"><span class="rup rup--big">Rs 499</span> vs a single <span class="rup">Rs 60,000+</span> job you almost let go cold.</p>
+          <p class="roi__stat">A subscription sized to your setup vs a single <span class="rup">Rs 60,000+</span> job you almost let go cold.</p>
         </div>
       </div>
     </section>
@@ -341,7 +460,7 @@
     <div class="rule"></div>
 
     <!-- ============ 8. WHO IT'S FOR + FAQ ============ -->
-    <section class="section" id="faq">
+    <section class="section" id="faq" aria-label="Who it's for and frequently asked questions">
       <div class="whofor">
         <div class="section__head section__head--left">
           <p class="eyebrow">Built for</p>
@@ -371,12 +490,16 @@
           <summary>Will it handle GST and different tax rates?</summary>
           <p>Yes. Add tax per line or on the whole quote; the printable quote page shows a clean tax breakup your customer can trust.</p>
         </details>
+        <details class="qa">
+          <summary>How much does BhaavBook cost?</summary>
+          <p>Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first users.</p>
+        </details>
       </div>
     </section>
   </main>
 
   <!-- ============ 9. FOOTER ============ -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Site footer">
     <div class="footer__brand">
       <span class="nav__name">BhaavBook</span>
       <p class="footer__tag">Chase the quote, win the job.</p>
@@ -384,7 +507,7 @@
     <div class="footer__meta">
       <p>A <strong>KARYA</strong> studio build.</p>
       <p><a href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a></p>
-      <p class="footer__fine">Rs 499/mo · Made for Indian trades</p>
+      <p class="footer__fine">Subscription · pricing on discovery · Made for Indian trades</p>
     </div>
   </footer>
 

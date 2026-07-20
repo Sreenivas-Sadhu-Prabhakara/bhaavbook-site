@@ -338,6 +338,11 @@ code{font-family:var(--mono);font-size:0.9em;background:var(--violet-soft);
 .price-card__cur{font-size:0.42em;vertical-align:0.55em;margin-right:6px;color:#C4A8FF}
 .price-card__per{font-size:0.3em;color:#9E96B0;font-family:var(--sans);
   letter-spacing:0;margin-left:6px;font-weight:600;vertical-align:0.35em}
+.price-card__amt{display:flex;flex-direction:column;gap:4px}
+.price-card__per--lead{font-size:0.44em;color:#fff;font-weight:800;margin-left:0;
+  vertical-align:baseline}
+.price-card__per{margin-left:0;vertical-align:baseline}
+.price-card__blurb{color:#D8D2E4;font-size:0.98rem;line-height:1.6;margin:4px 0 6px}
 .price-card__list{list-style:none;padding:0;margin:20px 0 26px;display:grid;gap:12px}
 .price-card__list li{position:relative;padding-left:28px;color:#D8D2E4;font-size:0.98rem}
 .price-card__list li::before{content:"✓";position:absolute;left:0;color:var(--green);
